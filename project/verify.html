@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify - Typing Fingerprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="verify-page">
+    <main class="verify-card">
+        <h1>Verify Your Identity</h1>
+        <p>Type your phrase to check your typing pattern.</p>
+        <label for="userSelect">Select Username</label>
+        <select id="userSelect">
+            <option value="">Choose a user</option>
+        </select>
+        <h3>Type this phrase</h3>
+        <p id="phrase">the quick brown fox</p>
+        <input
+            id="verifyTyping"
+            type="text"
+            placeholder="Type the phrase here"
+            autocomplete="off"
+        >
+          <div class="confidence-box">
+           <h3>Live Identity Confidence</h3>
+         <div class="confidence-track">
+        <div id="confidenceBar"></div>
+         </div>
+         
+        <p id="confidenceText">Waiting for typing...</p>
+        <p id="typingStatus">Status: Not started</p>
+        </div>
+        <button id="verifyBtn">Verify</button>
+
+        <p id="result">Your result will appear here.</p>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <script src="verify.js"></script>
+</body>
+</html>

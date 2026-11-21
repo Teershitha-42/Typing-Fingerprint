@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enroll - Typing Fingerprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="enroll-page">
+<main class="enroll-card">
+ <h1>⌨ Typing Fingerprint</h1>
+<h2>Enroll Your Typing Pattern</h2>
+<p> Type the same phrase five times so we can record
+            your typing rhythm.
+</p>
+<label for="username">Username</label>
+ <input
+            id="username"
+            type="text"
+            placeholder="Enter your username"
+            autocomplete="username">
+ <h3>Type this phrase</h3>
+ <p id="phrase">the quick brown fox</p>
+ <label for="typing">Typing input</label>
+ <input
+            id="typing"
+            type="text"
+            placeholder="Type the phrase here"
+            autocomplete="off">
+<p id="counter" aria-live="polite">Sample 0 of 5</p>
+
+<progress id="progress" value="0" max="5"></progress>
+<p id="enrollStatus" aria-live="polite">
+            Enter a username to begin.
+</p>
+ <div class="enroll-buttons">
+  <button id="reset" type="button">Reset</button>
+  <a href="index.html">Back to Home</a>
+  </div>
+</main>
+
+    <script src="enroll.js"></script>
+</body>
+</html>

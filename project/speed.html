@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="stats-page">
+
+    <main class="stats-container">
+        <h1>Live Typing Speed Test</h1>
+        <p>Test your typing speed and accuracy.</p>
+        <div class="stat-card">
+            <h3>Type this sentence:</h3>
+            <p id="targetText">
+                JavaScript makes web applications interactive and powerful.
+            </p>
+            <textarea
+                id="speedInput"
+                placeholder="Start typing here..."
+                rows="4"
+            ></textarea>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Speed</h3>
+                    <p id="wpm">0 WPM</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Accuracy</h3>
+                    <p id="accuracy">100%</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Time</h3>
+                    <p id="time">0 sec</p>
+                </div>
+            </div>
+            <p id="speedResult"></p>
+        <button id="submitTest">Submit</button>
+        <button id="restartTest">Try Again</button>
+        </div>
+
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <script src="speed.js"></script>
+</body>
+</html>

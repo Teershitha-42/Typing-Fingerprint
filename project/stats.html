@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Fingerprint - Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="stats-page">
+    <main class="stats-container">
+        <h1>Typing Fingerprint Analytics</h1>
+        <p>Your typing pattern statistics</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Enrolled Users</h3>
+                <p id="totalUsers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Typing Samples</h3>
+                <p id="totalSamples">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Dwell Time</h3>
+                <p id="avgDwell">0 ms</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Flight Time</h3>
+                <p id="avgFlight">0 ms</p>
+            </div>
+        </div>
+       
+            <h2>Typing Pattern Analysis</h2>
+
+           <div class="chart-card">
+        <canvas id="typingChart" width="600" height="300"></canvas>
+         </div>
+        <h2>Enrolled Profiles</h2>
+        <div id="profileList"></div>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <script src="stats.js"></script>
+</body>
+</html>
